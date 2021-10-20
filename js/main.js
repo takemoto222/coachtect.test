@@ -1,0 +1,1 @@
+odcument.getElementById(id)

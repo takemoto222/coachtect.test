@@ -1,0 +1,32 @@
+/* body */
+body {
+  background: #e9e9e9;
+  color: #696969;
+}
+
+/*  Layout 全体*/
+.inner_box {
+  background: #fff;
+  margin: 5% auto;
+  width: 700px;
+  height: 850px;
+}
+
+/*ヘッダー*/
+.header {
+  height: 80px;
+  width: 100%;
+  background: #a9a9a9;
+}
+/*タイトルの枠組み、ここに margin: auto;をつけて真ん中にしたいが反応しない*/
+.header_ttl_area {
+  margin: auto;
+}
+
+/*タイトルの文字に対して*/
+.header_ttl {
+  font-size: 30px;
+  margin: auto;
+  color: #696969;
+  align-items: center;
+}
