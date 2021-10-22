@@ -1,32 +1,57 @@
-/* body */
-body {
-  background: #e9e9e9;
-  color: #696969;
-}
-
-/*  Layout 全体*/
-.inner_box {
-  background: #fff;
-  margin: 5% auto;
+.inner_box_wrapper {
   width: 700px;
-  height: 850px;
+  margin: 5% auto;
 }
 
-/*ヘッダー*/
-.header {
-  height: 80px;
+/*ヘッダー部分*/
+.header_list {
   width: 100%;
-  background: #a9a9a9;
-}
-/*タイトルの枠組み、ここに margin: auto;をつけて真ん中にしたいが反応しない*/
-.header_ttl_area {
-  margin: auto;
+  height: 60px;
+  background: rgb(241, 72, 72);
+  display: flex;
+  justify-content: space-between;
 }
 
-/*タイトルの文字に対して*/
-.header_ttl {
+.h1_ttl {
+  margin-left: 40%;
   font-size: 30px;
-  margin: auto;
-  color: #696969;
+  color: #fff;
+}
+
+.nav_list {
+  display: flex;
+}
+.li {
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  background: #eee;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  text-align: center;
+
+  margin-right: 15px;
+}
+
+.nav_list_a {
+}
+
+.img_icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/*アナウンススペース*/
+.announce_space {
+  height: 20vh;
+  width: 100%;
+  background: #eee;
   align-items: center;
+}
+
+.announce_p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
