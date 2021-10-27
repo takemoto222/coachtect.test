@@ -1,32 +1,38 @@
 
 
+//横スライド
+const btn = document.getElementsByClassName("btns");
+const preBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
 
-//ハンバーガー
-const target = document.getElementById("menu");
-target.addEventListener('click', () => {
-target.classList.toggle('open');
-const nav = document.getElementById("nav");
-nav.classList.toggle('in');
-});
+for (let i = 0; i < btn.length; i++) {
+  btn[i].addEventListener("click", () => {
+    const slide = document.querySelector(".slide ul").children;
+    const Indicator = document.querySelector(".indicator").children;
 
+    const lastSlideIndex = slide.length - 1;
+    const firstSlideIndex = 0;
+    const lastIndicatorIndex = Indicator.length - 1;
+    const firstIndicatorIndex = 0;
 
-//横スクロール
-function countScroll(){
-  const target = document.getElementById('target');
-  const x = target.scrollLeft;
-  document.getElementById('output').innerHTML = x;
-}
+    const firstItem = slide.item(firstSlideIndex);
+    const lastItem = slide.item(lastSlideIndex);
+    const firstIndicator = Indicator.item(firstIndicatorIndex);
+    const lastIndicator = Indicator.item(lastIndicatorIndex);
 
-
-//pcの上下スクロール
-function scrollTop(elem) {
-  const target = document.getElementById(elem);
-  target.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
+    if (btn[i] === preBtn) {
+      setTimeout(() => {
+        firstItem.parentNode.insertBefore(lastItem, firstItem);
+        firstIndicator.parentNode.insertBefore(
+          firstIndicator,
+          lastIndicator.nextSibling
+        );
+      }, 400);
+    } else if (btn[i] === nextBtn) {
+      setTimeout(() => {
+        lastItem.parentNode.insertBefore(firstItem, lastItem.nextSibling);
+        firstIndicator.parentNode.insertBefore(lastIndicator, firstIndicator);
+      }, 400);
+    }
   });
 }
-
-scrollTop('button');

@@ -5,254 +5,69 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mypage.css">
     <link rel="stylesheet" href="css/reset.css">
+    <!--横スライド-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>jsハンバーガーメニュー対応</title>
+    <title>テスト</title>
   </head>
 
   <body>
 
 
-    <!--ハンバーガー -->
-    <header>
-      <nav class="nav_hum" id="nav">
-        <!--ここにハンバーがーメニューの中身をいれる-->
-      </nav>
-      <div class="menu" id="menu">
-        <span class="menu__line--top"></span>
-        <span class="menu__line--middle"></span>
-        <span class="menu__line--bottom"></span>
-      </div>
-      <script src="js/main.js"></script>
-      <!--ハンバーガー-->
 
-      <!--ロゴ-->
-      <div class="area_logo_header">
-        <a href="" class="logo">Logo</a>
-      </div>
-      <!--フォーム　検索-->
-      <form class="form_header" action="">
-        <div class="wrap_input">
-          <input class="seach_space" type="search">
-          <a href="" class="seach_button">検索</a>
-        </div>
-      </form>
 
-      <!--ナビバー-->
-      <nav class="nav_header">
-        <ul class="list_nav_header">
-          <li class="login">
-            <a href="login.html" class="btn_login">ログイン</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <main class="main">
+      <!--トップ画面のお気に入り画像-->
+      <h2 class="top_ttl_h2">お気に入り</h2>
 
 
 
+      <!---->
+      <!--横スライド-->
+      <!--画像-->
+      <div class="slider">
 
-    <div class="layout_page">
-
-
-
-
-
-
-      <!--サイドバー -->
-
-      <aside class="sidebar">
-        <div class="box">
-          <ul class="list_nav_sidebar">
-            <li class="sidebar_list"><a href="mypage.html" class="sidebar_a">マイページ</a></li>
-            <li class="sidebar_list"><a href="" class="sidebar_a">履歴</a></li>
-            <li class="sidebar_list"><a href="" class="sidebar_a">空白</a></li>
+        <div class="slide">
+          <!--やじるし-->
+          <div class="next-btn btns">
+            <i class="fas fa-angle-right fa-3x"></i>
+          </div>
+          <!--やじるし-->
+          <ul>
+            <li><a href="item.html" class="top_favoimg_a"><img src="img/elephant.png" alt="" /></a></li>
+            <li><a href="item.html" class="top_favoimg_a"><img src="img/elephant.png" alt="" /></a></li>
+            <li><a href="item.html" class="top_favoimg_a"><img src="img/elephant.png" alt="" /></a></li>
+            <li><a href="item.html" class="top_favoimg_a"><img src="img/elephant.png" alt="" /></a></li>
+            <li><a href="item.html" class="top_favoimg_a"><img src="img/elephant.png" alt="" /></a></li>
           </ul>
+          <!--やじるし-->
+          <div class="next-btn btns">
+            <i class="fas fa-angle-right fa-3x"></i>
+          </div>
+          <!--やじるし-->
         </div>
-        <div class="area_register_sidebar">
-          <p class="sidebar_p">お気に入り、コメント、取引を行うにはログインしてください。</p>
-          <a href="login.html" class="btn_login">ログイン</a>
-        </div>
-        <div class="category"><a href="" class="sidebar_a">カテゴリー</a></div>
-        <div class="box">
-          <ul class="list_nav_sidebar">
-            <li class="sidebar_list"><a href="" class="sidebar_a">テント・タープ</a></li>
-            <li class="sidebar_list"><a href="" class="sidebar_a">寝袋</a></li>
-            <li class="sidebar_list"><a href="" class="sidebar_a">椅子・机</a></li>
-            <li class="sidebar_list"><a href="" class="sidebar_a">調理関連</a></li>
-            <li class="sidebar_list"><a href="" class="sidebar_a">ランタン</a></li>
-            <li class="sidebar_list"><a href="" class="sidebar_a">衣類</a></li>
-            <li class="sidebar_list"><a href="" class="sidebar_a">バッグ</a></li>
-            <li class="sidebar_list"><a href="" class="sidebar_a">靴</a></li>
-            <li class="sidebar_list"><a href="" class="sidebar_a">その他</a></li>
-          </ul>
-        </div>
-      </aside>
 
 
+        <div class="controller">
 
-
-
-      <main class="main">
-        <!--トップ画面のお気に入り画像-->
-        <h2 class="top_ttl_h2">お気に入り</h2>
-        <div id="target" class="scroll_side">
-          <div class="box">
-            <ul class="list_favo_image">
-              <li>
-                <article>
-                  <div class="thum">サムネイル</div>
-                  <div class="img"></div>
-                  <div class="thum_text">
-                    <p class="thum_p">ここにタイトルが記載されます</p>
-                  </div>
-                </article>
-              </li>
-              <!--複製-->
-
-              <li>
-                <article>
-                  <div class="thum">サムネイル</div>
-                  <div class="img"></div>
-                  <div class="thum_text">
-                    <p class="thum_p">ここにタイトルが記載されます</p>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article>
-                  <div class="thum">サムネイル</div>
-                  <div class="img"></div>
-                  <div class="thum_text">
-                    <p class="thum_p">ここにタイトルが記載されます</p>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article>
-                  <div class="thum">サムネイル</div>
-                  <div class="img"></div>
-                  <div class="thum_text">
-                    <p class="thum_p">ここにタイトルが記載されます</p>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article>
-                  <div class="thum">サムネイル</div>
-                  <div class="img"></div>
-                  <div class="thum_text">
-                    <p class="thum_p">ここにタイトルが記載されます</p>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article>
-                  <div class="thum">サムネイル</div>
-                  <div class="img"></div>
-                  <div class="thum_text">
-                    <p class="thum_p">ここにタイトルが記載されます</p>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article>
-                  <div class="thum">サムネイル</div>
-                  <div class="img"></div>
-                  <div class="thum_text">
-                    <p class="thum_p">ここにタイトルが記載されます</p>
-                  </div>
-                </article>
-              </li>
-
-
-            </ul>
+          <div class="indicator">
+            <!--spanを増やすと画像選択の丸が増える-->
+            <span id="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
 
           </div>
-        </div>
-        <!--新着-->
-        <h2 class="top_ttl_h2">新着</h2>
-
-        <div class="box">
-          <ul class="list_image">
-            <li>
-              <article>
-                <div class="thum">サムネイル</div>
-                <div class="eye">
-                  <div class="img"></div>
-                </div>
-                <div class="thum_text">
-                  <p class="thum_p">ここにタイトルが記載されます</p>
-                </div>
-              </article>
-            </li>
-            <!--複製-->
-            <li>
-              <article>
-                <div class="thum">サムネイル</div>
-                <div class="eye">
-                  <div class="img"></div>
-                </div>
-                <div class="thum_text">
-                  <p class="thum_p">ここにタイトルが記載されます</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article>
-                <div class="thum">サムネイル</div>
-                <div class="eye">
-                  <div class="img"></div>
-                </div>
-                <div class="thum_text">
-                  <p class="thum_p">ここにタイトルが記載されます</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article>
-                <div class="thum">サムネイル</div>
-                <div class="eye">
-                  <div class="img"></div>
-                </div>
-                <div class="thum_text">
-                  <p class="thum_p">ここにタイトルが記載されます</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article>
-                <div class="thum">サムネイル</div>
-                <div class="eye">
-                  <div class="img"></div>
-                </div>
-                <div class="thum_text">
-                  <p class="thum_p">ここにタイトルが記載されます</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article>
-                <div class="thum">サムネイル</div>
-                <div class="eye">
-                  <div class="img"></div>
-                </div>
-                <div class="thum_text">
-                  <p class="thum_p">ここにタイトルが記載されます</p>
-                </div>
-              </article>
-            </li>
-
-
-          </ul>
 
         </div>
-        <!--スクロール　＋　出品ボタン-->
-        <button class="listing_top"><a href="listing.html" class="listing_top_a">出品</a></button>
-        <button class="scroll-top" id="button">↑</button>
-        <script type="text/javascript" src="js/main.js"></script>
-      </main>
-    </div>
+      </div>
+      <!--横スライド-->
+  
+
+   
 
   </body>
-</thml>
